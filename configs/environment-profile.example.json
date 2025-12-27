@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "environmentName": "Example",
+  "assumptions": {
+    "primaryHypervisor": "vmware",
+    "identityProvider": "activeDirectory",
+    "monitoringAvailable": false
+  },
+  "thresholds": {
+    "cpuSustainedPct": 80,
+    "diskFreePctMin": 15,
+    "certExpiryDays": 45
+  }
+}

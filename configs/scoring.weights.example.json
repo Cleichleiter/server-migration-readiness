@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "categories": {
+    "Compute": 0.15,
+    "Storage": 0.15,
+    "Network": 0.10,
+    "Identity": 0.15,
+    "Application": 0.20,
+    "Security": 0.15,
+    "Operations": 0.10
+  },
+  "notes": "Weights should sum to 1.0. Adjust per environment profile."
+}

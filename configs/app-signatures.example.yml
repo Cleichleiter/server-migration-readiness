@@ -1,0 +1,15 @@
+# app-signatures.example.yml
+applications:
+  - name: IIS
+    indicators:
+      services: ["W3SVC"]
+      features: ["Web-Server"]
+  - name: SQL Server
+    indicators:
+      services: ["MSSQLSERVER"]
+      registryKeys:
+        - "HKLM:\\SOFTWARE\\Microsoft\\Microsoft SQL Server"
+  - name: RDS
+    indicators:
+      services: ["TermService"]
+      features: ["Remote-Desktop-Services"]

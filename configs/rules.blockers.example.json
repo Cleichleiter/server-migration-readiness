@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "blockers": [
+    {
+      "id": "OS_EOL",
+      "severity": "HardStop",
+      "category": "Operations",
+      "description": "Operating system is end-of-life or unsupported.",
+      "evidence": "os.version, os.eolStatus",
+      "remediation": "Upgrade OS or replatform workload prior to migration."
+    },
+    {
+      "id": "CERT_EXPIRY_SOON",
+      "severity": "Risk",
+      "category": "Security",
+      "description": "Certificate expires within threshold window.",
+      "evidence": "certificates[].notAfter",
+      "remediation": "Renew/replace certs and validate bindings before cutover."
+    },
+    {
+      "id": "NO_BACKUP_SIGNAL",
+      "severity": "HardStop",
+      "category": "Operations",
+      "description": "No evidence of valid backups or successful restore testing.",
+      "evidence": "backup.lastSuccess, backup.restoreTest",
+      "remediation": "Establish backup coverage and validate restore prior to migration."
+    }
+  ]
+}
